@@ -1,0 +1,103 @@
+html,
+body {
+    background-color: #212121;
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 2rem;
+    justify-content: center;
+    padding: 2rem;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    align-items: center;
+    width: 70vw
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Hind&display=swap');
+
+.search-bar>form {
+    background-color: #424242;
+    display: inline-flex;
+    width: 40vw;
+    padding: 1rem;
+    border-radius: 1rem;
+    align-items: center;
+    gap: 1rem;
+}
+
+.search-bar input {
+    background-color: transparent;
+    color: #ffffff;
+    border: none;
+    width: 90%;
+
+}
+
+.search-bar input:focus {
+    outline: none;
+    caret-color: #ffffff;
+}
+
+.search-bar input::placeholder {
+    color: #737363;
+}
+
+.shortcut-container {
+    display: inline-flex;
+    gap: 1rem;
+}
+
+.shortcut {
+    cursor: pointer;
+    font-family: 'Hind', sans-serif;
+    background-color: transparent;
+    text-align: center;
+    box-sizing: border-box;
+    border-radius: 0.4rem;
+}
+
+.shortcut-name {
+    margin: 0;
+    height: 32px;
+    line-height: 16px;
+    padding: 2px 8px;
+    width: 88px;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 6px;
+    font-size: 15px;
+}
+
+.shortcut-container>.shortcut>div {
+    background-color: #ccc;
+    display: inline-flex;
+    box-sizing: border-box;
+    height: 2.4rem;
+    width: 2.4rem;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
+    margin-top: 1rem;
+}
+
+.shortcut:hover {
+    background-color: #323233;
+}
+
+.shortcut:hover>div {
+    background-color: #212121;
+}
+
+hr {
+    text-align: center;
+    border-bottom: 0px solid #616161 !important;
+    line-height: 0.1em;
+    margin: 10px 0 20px;
+    width: 100%;
+}
